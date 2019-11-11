@@ -13,7 +13,7 @@ read -r number;
 done
 x=1;
 
-parity="odd";
+parity="Odd";
 
 # while the counter is less than the input number
 while [ $x -le  "$number" ]
@@ -21,9 +21,9 @@ do
 # if there is no remainder after integer div (modulo operation) then change the parity
 if  [[ $((x%2)) -eq 0 ]]; 
 then 
-	parity="even";
+	parity="Even";
 else
-	parity="odd";
+	parity="Odd";
 fi
 # output result
 echo "$x $parity";
