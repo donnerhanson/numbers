@@ -2,10 +2,15 @@
 # numbers.sh
 # Donner Hanson
 
-echo "enter a natural number greater than 0:"
+echo "enter a natural number greater than 0:";
 
 read -r number;
 
+while [ "$number" -le 0 ]
+do
+echo "input a natural number greater than 0:";
+read -r number;
+done
 x=1;
 
 parity="odd";
